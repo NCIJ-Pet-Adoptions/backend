@@ -10,28 +10,30 @@ app.use(express.urlencoded({extended:false}))
 
 //Imports
 const {sequelize} = require('./db');
-const { Dog }= require('./models/dog')
+const  Dog = require('./models/dog')
 const seed = require('./seed');
 
 //Path
 const path = require('path');
-const { json } = require("body-parser");
 
-// //Static assets from public folder
-// app.use(express.static('public')) 
 
 //points toward folder of static files
 app.use(express.static(path.join(__dirname, 'public')))
 
+//index redirects to sauces
+app.get('/', (req,res)=>{
+    res.redirect('/dog')
+})
+
 app.get('/dog', async (req, res) => { 
     const allDogs = await Dog.findAll();
-    res.render('dog', {allDogs}) 
+    res.json(allDogs) 
 });
 
 
 app.get('/dog/:id', async (req, res) => {
     const singleDog = await Dog.findByPk(req.params.id);
-    res.render(dog, {singleDog}); 
+    res.json(singleDog); 
 })
 
 app.listen(port, () => {
