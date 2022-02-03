@@ -16,4 +16,4 @@ Dog.init({
     timestamps: false,
 });
 
-module.exports = Dog;
+module.exports = {Dog};
