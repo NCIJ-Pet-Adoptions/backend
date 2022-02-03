@@ -3,22 +3,13 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-
 //Allow express to read json request bodies
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 //Imports
 const {sequelize} = require('./db');
-const  Dog = require('./models/dog')
-const seed = require('./seed');
-
-//Path
-const path = require('path');
-
-
-//points toward folder of static files
-app.use(express.static(path.join(__dirname, 'public')))
+const  {Dog} = require('./models/dog')
 
 //index redirects to sauces
 app.get('/', (req,res)=>{
