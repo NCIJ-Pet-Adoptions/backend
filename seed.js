@@ -4,7 +4,7 @@ const {Dog} = require('./models/dog')
 const seedDog = [
     {
         name : 'Lassie',
-        image : 'someimage.jpg',
+        image : './images/lassie.png',
         purpose : 'Service Dog',
         breed : 'German Shepherd',
         color : 'Multicolor',
@@ -13,16 +13,16 @@ const seedDog = [
     },
     {
         name : 'Buddy',
-        image : 'someimage.jpg',
+        image : './images/buddy.png',
         purpose : 'Service Dog',
         breed : 'Labrador',
-        color : 'Brown',
+        color : 'Gold',
         size : 'Medium',
         hypoallergenic : 'No'
       },
     {
         name : 'Major',
-        image : 'someimage.jpg',
+        image : './images/major.png',
         purpose : 'Guard Dog',
         breed : 'Chihuahua',
         color : 'Brown',
@@ -31,7 +31,7 @@ const seedDog = [
     },
     {
         name : 'Susie',
-        image : 'someimage.jpg',
+        image : './images/susie.png',
         purpose : 'Home Pet',
         breed : 'Poodle',
         color : 'White',
