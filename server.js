@@ -3,6 +3,10 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+//cors
+const cors = require('cors');
+app.use(cors());
+
 //Allow express to read json request bodies
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
