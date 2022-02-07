@@ -1,8 +1,8 @@
 const {Sequelize, DataTypes, Model, INTEGER} = require('sequelize');
 const {sequelize} = require('../db');
-class Dog extends Model {}
+class Dogs extends Model {}
 
-Dog.init({
+Dogs.init({
     name:DataTypes.STRING,
     image:DataTypes.STRING,
     purpose:DataTypes.STRING,
@@ -16,4 +16,4 @@ Dog.init({
     timestamps: false,
 });
 
-module.exports = {Dog};
+module.exports = {Dogs};

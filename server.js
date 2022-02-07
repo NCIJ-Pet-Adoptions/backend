@@ -3,32 +3,32 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-//cors
-const cors = require('cors');
-app.use(cors());
-
 //Allow express to read json request bodies
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
+//cors
+const cors = require('cors');
+app.use(cors());
+
 //Imports
 const {sequelize} = require('./db');
-const  {Dog} = require('./models/dog')
+const  {Dogs} = require('./models/dogs')
 
-//index redirects to sauces
+//index redirects to dog
 app.get('/', (req,res)=>{
-    res.redirect('/dog')
+    res.redirect('/dogs')
 })
 
-app.get('/dog', async (req, res) => { 
-    const allDogs = await Dog.findAll();
+app.get('/dogs', async (req, res) => { 
+    const allDogs = await Dogs.findAll();
     res.json(allDogs) 
 });
 
 
-app.get('/dog/:id', async (req, res) => {
-    const singleDog = await Dog.findByPk(req.params.id);
-    res.json(singleDog); 
+app.get('/dogs/:id', async (req, res) => {
+    const singleDog = await Dogs.findByPk(req.params.id);
+    res.json({singleDog}); 
 })
 
 app.listen(port, () => {
