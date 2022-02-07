@@ -1,10 +1,10 @@
 const {sequelize} = require('./db')
-const {Dog} = require('./models/dog')
+const {Dogs} = require('./models/dogs')
 
-const seedDog = [
+const seedDogs = [
     {
         name : 'Lassie',
-        image : './images/lassie.png',
+        image : '/images/lassie.png',
         purpose : 'Service Dog',
         breed : 'German Shepherd',
         color : 'Multicolor',
@@ -13,7 +13,7 @@ const seedDog = [
     },
     {
         name : 'Buddy',
-        image : './images/buddy.png',
+        image : '/images/buddy.png',
         purpose : 'Service Dog',
         breed : 'Labrador',
         color : 'Gold',
@@ -22,7 +22,7 @@ const seedDog = [
       },
     {
         name : 'Major',
-        image : './images/major.png',
+        image : '/images/major.png',
         purpose : 'Guard Dog',
         breed : 'Chihuahua',
         color : 'Brown',
@@ -31,7 +31,7 @@ const seedDog = [
     },
     {
         name : 'Susie',
-        image : './images/susie.png',
+        image : '/images/susie.png',
         purpose : 'Home Pet',
         breed : 'Poodle',
         color : 'White',
@@ -40,7 +40,7 @@ const seedDog = [
       },
       {
         name : 'Curlie',
-        image : 'someimage.jpg',
+        image : '/images/curlie.png',
         purpose : 'Home Pet',
         breed : 'Portuguese Water Dog',
         color : 'Black',
@@ -53,7 +53,7 @@ const seedDog = [
   const seed = async () => {
     try {
       await sequelize.sync({force: true})
-      await Dog.bulkCreate(seedDog, {validate: true})
+      await Dogs.bulkCreate(seedDogs, {validate: true})
       console.log('Seeding success!')
       sequelize.close()
     } catch (error) {
