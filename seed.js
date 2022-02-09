@@ -2,51 +2,78 @@ const {sequelize} = require('./db')
 const {Dogs} = require('./models/dogs')
 
 const seedDogs = [
-    {
-        name : 'Lassie',
-        image : '/images/lassie.png',
-        purpose : 'Service Dog',
-        breed : 'German Shepherd',
-        color : 'Multicolor',
-        size : 'Medium',
-        hypoallergenic : 'No'
-    },
-    {
-        name : 'Buddy',
-        image : '/images/buddy.png',
-        purpose : 'Service Dog',
-        breed : 'Labrador',
-        color : 'Gold',
-        size : 'Medium',
-        hypoallergenic : 'No'
-      },
-    {
-        name : 'Major',
-        image : '/images/major.png',
-        purpose : 'Guard Dog',
-        breed : 'Chihuahua',
-        color : 'Brown',
-        size : 'Medium',
-        hypoallergenic : 'No'
-    },
-    {
-        name : 'Susie',
-        image : '/images/susie.png',
-        purpose : 'Home Pet',
-        breed : 'Poodle',
-        color : 'White',
-        size : 'Toy',
-        hypoallergenic : 'Yes'
-      },
-      {
-        name : 'Curlie',
-        image : '/images/curlie.png',
-        purpose : 'Home Pet',
-        breed : 'Portuguese Water Dog',
-        color : 'Black',
-        size : 'Large',
-        hypoallergenic : 'Yes'
-      },
+  {
+    name : 'Lassie',
+    image : '/images/lassie.png',
+    purpose : 'Service Dog',
+    breed : 'German Shepherd',
+    color : 'Multicolor',
+    size : 'Medium',
+    gender : 'Male'
+},
+{
+    name : 'Buddy',
+    image : '/images/buddy.png',
+    purpose : 'Service Dog',
+    breed : 'Labrador',
+    color : 'Gold',
+    size : 'Medium',
+    gender : 'Male'
+  },
+{
+    name : 'Major',
+    image : '/images/major.png',
+    purpose : 'Guard Dog',
+    breed : 'Chihuahua',
+    color : 'Brown',
+    size : 'Medium',
+    gender : 'Male'
+},
+{
+    name : 'Susie',
+    image : '/images/susie.png',
+    purpose : 'Home Pet',
+    breed : 'Poodle',
+    color : 'White',
+    size : 'Toy',
+    gender : 'Female'
+  },
+  {
+    name : 'Curlie',
+    image : '/images/curlie.png',
+    purpose : 'Home Pet',
+    breed : 'Portuguese Water Dog',
+    color : 'Black',
+    size : 'Large',
+    gender : 'Female'
+  },
+  {
+    name : 'Scout',
+    image : '/images/scout.png',
+    purpose : 'Home Pet',
+    breed : 'Beagle',
+    color : 'Multicolor',
+    size : 'Medium',
+    gender : 'Male'
+  },
+  {
+    name : 'Snow',
+    image : '/images/snow.png',
+    purpose : 'Home Pet',
+    breed : 'Chow Chow',
+    color : 'White',
+    size : 'Large',
+    gender : 'Female'
+  },
+  {
+    name : 'Sassy',
+    image : '/images/sassy.png',
+    purpose : 'Service Dog',
+    breed : 'Pomeranian',
+    color : 'Multicolor',
+    size : 'Toy',
+    gender : 'Female'
+  },
   
 ]
   
