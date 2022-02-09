@@ -9,7 +9,7 @@ const seedDogs = [
         breed : 'German Shepherd',
         color : 'Multicolor',
         size : 'Medium',
-        hypoallergenic : 'No'
+        gender : 'Male'
     },
     {
         name : 'Buddy',
@@ -18,7 +18,7 @@ const seedDogs = [
         breed : 'Labrador',
         color : 'Gold',
         size : 'Medium',
-        hypoallergenic : 'No'
+        gender : 'Male'
       },
     {
         name : 'Major',
@@ -27,7 +27,7 @@ const seedDogs = [
         breed : 'Chihuahua',
         color : 'Brown',
         size : 'Medium',
-        hypoallergenic : 'No'
+        gender : 'Male'
     },
     {
         name : 'Susie',
@@ -36,7 +36,7 @@ const seedDogs = [
         breed : 'Poodle',
         color : 'White',
         size : 'Toy',
-        hypoallergenic : 'Yes'
+        gender : 'Female'
       },
       {
         name : 'Curlie',
@@ -45,7 +45,34 @@ const seedDogs = [
         breed : 'Portuguese Water Dog',
         color : 'Black',
         size : 'Large',
-        hypoallergenic : 'Yes'
+        gender : 'Female'
+      },
+      {
+        name : 'Scout',
+        image : '/images/scout.png',
+        purpose : 'Home Pet',
+        breed : 'Beagle',
+        color : 'Multicolor',
+        size : 'Medium',
+        gender : 'Male'
+      },
+      {
+        name : 'Snow',
+        image : '/images/snow.png',
+        purpose : 'Home Pet',
+        breed : 'Chow Chow',
+        color : 'White',
+        size : 'Large',
+        gender : 'Female'
+      },
+      {
+        name : 'Sassy',
+        image : '/images/sassy.png',
+        purpose : 'Service Dog',
+        breed : 'Pomeranian',
+        color : 'Multicolor',
+        size : 'Toy',
+        gender : 'Female'
       },
   
 ]

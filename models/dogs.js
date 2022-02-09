@@ -9,7 +9,7 @@ Dogs.init({
     breed:DataTypes.STRING, 
     color: DataTypes.STRING,
     size:DataTypes.INTEGER, 
-    hypoallergenic:DataTypes.BOOLEAN
+    gender:DataTypes.STRING
 
 }, {
     sequelize,
