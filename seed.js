@@ -75,7 +75,7 @@ const seedDogs = [
     size : 'Toy',
     gender : 'Female'
   },
-=======
+
     {
         name : 'Lassie',
         image : '/images/lassie.png',

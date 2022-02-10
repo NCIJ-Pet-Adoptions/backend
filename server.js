@@ -31,6 +31,24 @@ app.get('/dogs/:id', async (req, res) => {
     res.json({singleDog}); 
 })
 
+app.get('/breed/:breed', async (req, res) => {
+    const dogByBreed = await Dogs.findAll({where:{breed:req.params.breed}});
+    console.log(dogByBreed);
+    res.json({dogByBreed}); 
+});
+app.get('/color/:color', async (req, res) => {
+    const dogByColor = await Dogs.findAll({where:{color:req.params.color}});
+    res.json({dogByColor}); 
+});
+app.get('/size/:size', async (req, res) => {
+    const dogBySize = await Dogs.findAll({where:{size:req.params.size}});
+    res.json({dogBySize}); 
+})
+
+app.get('/gender/:gender', async (req, res) => {
+    const dogByGender = await Dogs.findAll({where:{gender:req.params.gender}});
+    res.json({dogByGender}); 
+})
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`)
 })
