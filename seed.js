@@ -74,6 +74,16 @@ const seedDogs = [
         size : 'Toy',
         gender : 'Female'
       },
+      {
+        name : 'Smokey',
+        image : '/images/smokey.png',
+        purpose : 'Home Pet',
+        breed : 'Labrador',
+        color : 'Black',
+        size : 'Medium',
+        gender : 'Female',
+        tidbit : 'Loving and caring'
+      },
   
 ]
   
