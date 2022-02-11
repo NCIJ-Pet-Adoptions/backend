@@ -30,7 +30,7 @@ const seedDogs = [
         color : 'Brown',
         size : 'Toy',
         gender : 'Male',
-        tidbit : "Don't let my size fool you, I'm the best guard dog in town!"
+        tidbit : "Best guard dog in town!"
     },
     {
         name : 'Susie',
