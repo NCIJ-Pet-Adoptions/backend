@@ -9,7 +9,8 @@ const seedDogs = [
         breed : 'German Shepherd',
         color : 'Multicolor',
         size : 'Medium',
-        gender : 'Male'
+        gender : 'Male',
+        tidbit : 'The great protector'
     },
     {
         name : 'Buddy',
@@ -18,7 +19,8 @@ const seedDogs = [
         breed : 'Labrador',
         color : 'Gold',
         size : 'Medium',
-        gender : 'Male'
+        gender : 'Male',
+        tidbit : 'Calm and compassionate'
       },
     {
         name : 'Major',
@@ -26,8 +28,9 @@ const seedDogs = [
         purpose : 'Guard Dog',
         breed : 'Chihuahua',
         color : 'Brown',
-        size : 'Medium',
-        gender : 'Male'
+        size : 'Toy',
+        gender : 'Male',
+        tidbit : "Don't let my size fool you, I'm the best guard dog in town!"
     },
     {
         name : 'Susie',
@@ -36,7 +39,8 @@ const seedDogs = [
         breed : 'Poodle',
         color : 'White',
         size : 'Toy',
-        gender : 'Female'
+        gender : 'Female',
+        tidbit : 'Cute as a button'
       },
       {
         name : 'Curlie',
@@ -45,7 +49,8 @@ const seedDogs = [
         breed : 'Portuguese Water Dog',
         color : 'Black',
         size : 'Large',
-        gender : 'Female'
+        gender : 'Female',
+        tidbit : 'Kids love me and I love kids'
       },
       {
         name : 'Scout',
@@ -54,7 +59,8 @@ const seedDogs = [
         breed : 'Beagle',
         color : 'Multicolor',
         size : 'Medium',
-        gender : 'Male'
+        gender : 'Male',
+        tidbit : 'Always investigating'
       },
       {
         name : 'Snow',
@@ -63,7 +69,8 @@ const seedDogs = [
         breed : 'Chow Chow',
         color : 'White',
         size : 'Large',
-        gender : 'Female'
+        gender : 'Female',
+        tidbit : 'I am always ready for an adventure'
       },
       {
         name : 'Sassy',
@@ -72,7 +79,8 @@ const seedDogs = [
         breed : 'Pomeranian',
         color : 'Multicolor',
         size : 'Toy',
-        gender : 'Female'
+        gender : 'Female',
+        tidbit : 'Sooo much personality in such a small package!'
       },
       {
         name : 'Smokey',
@@ -82,9 +90,9 @@ const seedDogs = [
         color : 'Black',
         size : 'Medium',
         gender : 'Female',
-        tidbit : 'Loving and caring'
+        tidbit : 'Loyalty is my greatest strength'
       },
-  
+      
 ]
   
   const seed = async () => {
