@@ -50,7 +50,7 @@ const seedDogs = [
         color : 'Black',
         size : 'Large',
         gender : 'Female',
-        tidbit : 'Kids love me and I love kids'
+        tidbit : 'I love kids'
       },
       {
         name : 'Scout',
@@ -70,7 +70,7 @@ const seedDogs = [
         color : 'White',
         size : 'Large',
         gender : 'Female',
-        tidbit : 'I am always ready for an adventure'
+        tidbit : 'Ready for an adventure'
       },
       {
         name : 'Sassy',
@@ -80,7 +80,7 @@ const seedDogs = [
         color : 'Multicolor',
         size : 'Toy',
         gender : 'Female',
-        tidbit : 'Sooo much personality in such a small package!'
+        tidbit : 'Sooo much personality!'
       },
       {
         name : 'Smokey',
@@ -90,7 +90,7 @@ const seedDogs = [
         color : 'Black',
         size : 'Medium',
         gender : 'Female',
-        tidbit : 'Loyalty is my greatest strength'
+        tidbit : 'Loyalty is my strength'
       },
       
 ]
