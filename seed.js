@@ -28,7 +28,7 @@ const seedDogs = [
         purpose : 'Guard Dog',
         breed : 'Chihuahua',
         color : 'Brown',
-        size : 'Medium',
+        size : 'Toy',
         gender : 'Male',
         tidbit : "Don't let my size fool you, I'm the best guard dog in town!"
     },
