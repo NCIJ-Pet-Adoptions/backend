@@ -9,7 +9,7 @@ Create a React App that allows users to view dogs available for adoption.
 </ul>
 
 
-# Technologies Used for the Frontend:
+# Technologies Used for the Backend:
 <ul>
 <li>Jest</li>
 <li>Sequelize</li>
